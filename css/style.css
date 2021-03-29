@@ -225,3 +225,90 @@ footer nav a:hover {
 footer .social a {
   margin: 15px;
 }
+
+
+
+/* Media Queries */
+
+  /* Tablets and Under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /* Showcase Styles */
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-text h1 {
+    font-size: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  /* Stats Styles */
+  .stats .container {
+    margin-top: 60px;
+  }
+
+  .stats .container .grid {
+    margin-top: -3px
+  }
+
+  .stats .container .grid > div {
+    margin-top: 30px;
+  }
+
+  .stats .container .grid h3 {
+    font-size: 20px;
+  }
+
+  /* Cli Styles */
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Cloud Styles */
+  .cloud .container img {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+
+  /* Mobile */
+@media (max-width: 500px) {
+
+  /* Navbar Styles */
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+}
