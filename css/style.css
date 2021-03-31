@@ -204,6 +204,30 @@ img {
 }
 
 
+/* Features Page */
+
+  /* Features heading Section Styles */
+.features-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+ /* Subhead Styles */
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+  /* Features Main Section Style */
+
+.features-main .container {
+  padding: 10px;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
 /* footer styles */
 footer {
   margin-top: 100px;
@@ -289,7 +313,6 @@ footer .social a {
     margin: auto;
   }
 }
-
 
   /* Mobile */
 @media (max-width: 500px) {
