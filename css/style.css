@@ -7,6 +7,8 @@
   --secondary: #1c3fa8;
   --dark: #002240;
   --light: #f4f4f4;
+  --success: #5cb85c;
+  --error: #d9534f;
 }
 
 /* Base Styles */
@@ -228,6 +230,24 @@ img {
   margin-right: 20px;
 }
 
+/* Docs Page */
+.docs-head img {
+  width: 250px;
+  justify-self: flex-end;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
 /* footer styles */
 footer {
   margin-top: 100px;
@@ -312,6 +332,35 @@ footer .social a {
     width: 400px;
     margin: auto;
   }
+
+
+  /* Features */
+  .features-head h1, p,
+  .features-sub-head h1, p {
+    text-align: center;
+  }
+
+  .features-head img {
+    justify-self: center;
+  }
+
+  .features-sub-head img {
+    justify-self: center;
+  }
+
+  /* Docs */
+  .docs-head h1, p {
+    text-align: center;
+  }
+
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
   /* Mobile */
