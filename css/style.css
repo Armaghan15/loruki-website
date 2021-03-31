@@ -50,7 +50,10 @@ img {
 
 /* Base Styles */
 
-
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
 
 
 /* Navbar Styles */
@@ -106,6 +109,10 @@ img {
   gap: 30px;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
@@ -114,10 +121,11 @@ img {
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
+  animation: slideInFromRight 1.5s ease-in-out;
 }
 
 .showcase-form .form-control {
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .showcase-form input[type="text"],
@@ -172,6 +180,14 @@ img {
 .cli .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid img {
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.cli .grid .card {
+  animation: slideInFromRight 1.5s ease-in-out;
 }
 
 .cli .grid > *:first-child {
@@ -271,6 +287,54 @@ footer .social a {
 }
 
 
+/* Animations */
+
+/* To move from the left side */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* To move from the right side */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/* To move from the top */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* To move from the bottom */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 /* Media Queries */
 
@@ -293,6 +357,7 @@ footer .social a {
   .showcase-text {
     text-align: center;
     margin-top: 40px;
+    animation: slideInFromBottom 1.5s ease-in-out;
   }
 
   .showcase-text h1 {
@@ -326,6 +391,15 @@ footer .social a {
     grid-column: 1;
     grid-row: 1;
   }
+
+  .cli .grid img {
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+
+  .cli .grid .card {
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+
 
   /* Cloud Styles */
   .cloud .container img {
